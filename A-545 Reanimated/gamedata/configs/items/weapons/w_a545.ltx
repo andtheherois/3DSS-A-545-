@@ -79,7 +79,7 @@ ammo_elapsed                             = 30
 ammo_mag_size                            = 30
 startup_ammo                             = 90
 
-scopes                                   = ac10632, eot, c-more, eot, e0t2, compm4s, aimpoint, ekp8_18, kemper, acog, 1p59, leupold, gauss_sight, pn23, specter, march_f_shorty, tac30, ps320
+scopes                                   = ac10632, eot, c-more, eot, e0t2, compm4s, aimpoint, ekp8_18, kemper, acog, triji, 1p59, leupold, mark8_rmr, gauss_sight, pn23, specter, spec_alt, march_f_shorty, march_f_shorty_alt, tac30, ps320
 scope_status                             = 0
 scope_zoom_factor                        = 0
 
@@ -177,18 +177,12 @@ lewd_lens_hide_bone          = lens
 lewd_lens_hide_delays        = 0.1,0
 lewd_lens_hide_aim_mode      = true, false, false
 
-use_alt_aim_hud             = true
 
 [wpn_a545_hud]:hud_base
 item_visual                              = anomaly_weapons\wpn_a545\wpn_a545_hud.ogf
 attach_place_idx                         = 0
 zoom_hide_crosshair                      = true   
 
-        aim_hud_offset_alt_pos           = 0.021392, 0.001194, -0.021401
-        aim_hud_offset_alt_pos_16x9      = 0.021392, 0.001194, -0.021401
-        aim_hud_offset_alt_rot           = 0, 0, -0.533321
-        aim_hud_offset_alt_rot_16x9      = 0, 0, -0.533321
-		
         aim_hud_offset_pos               = -0.048104, 0.012622, -0.035991
         aim_hud_offset_pos_16x9          = -0.048104, 0.012622, -0.035991
         aim_hud_offset_rot               = 0.008593, 0.01163, 0.00301
@@ -460,6 +454,32 @@ item_visual                              = anomaly_weapons\wpn_a545\wpn_a545_aco
         aim_hud_offset_rot_16x9          = 0.025967, 0.007827, 0.013
 
 ;--------------------------------------------------------------------------------
+[wpn_a545_triji]:wpn_a545
+1icon_layer                              = acog
+1icon_layer_x                            = 92
+1icon_layer_y                            = -16
+
+hud                                      = wpn_a545_triji_hud
+visual                                   = dynamics\weapons\wpn_a545\wpn_a545_acog.ogf
+
+scope_status                             = 1
+scope_zoom_factor                        = 42.86
+zoom_rotate_time                         = 0.25
+
+use_alt_aim_hud 						 = true
+
+[wpn_a545_triji_hud]:wpn_a545_hud
+item_visual                              = anomaly_weapons\wpn_a545\wpn_a545_triji_hud.ogf
+        aim_hud_offset_pos               = -0.047661, -0.007648, -0.114713
+        aim_hud_offset_pos_16x9          = -0.047661, -0.007648, -0.114713
+        aim_hud_offset_rot               = 0.025967, 0.007827, 0.013
+        aim_hud_offset_rot_16x9          = 0.025967, 0.007827, 0.013
+
+        aim_hud_offset_alt_pos           = -0.055469, -0.051759, -0.075449
+        aim_hud_offset_alt_pos_16x9      = -0.055469, -0.051759, -0.075449
+        aim_hud_offset_alt_rot           = 0, 0.001539, 0.75
+        aim_hud_offset_alt_rot_16x9      = 0, 0.001539, 0.75
+;--------------------------------------------------------------------------------
 [wpn_a545_specter]:wpn_a545
 hud							= wpn_a545_specter_hud
 visual                      = dynamics\weapons\wpn_a545\wpn_a545_specter.ogf
@@ -475,13 +495,48 @@ zoom_rotate_time            = 0.25
 scope_dynamic_zoom          = on
 scope_zoom_factor_alt       = 0
 
+use_alt_aim_hud 						 = true
+
 [wpn_a545_specter_hud]:wpn_a545_hud
 item_visual				= anomaly_weapons\wpn_a545\wpn_a545_specter_hud.ogf
         aim_hud_offset_pos               = -0.047584, -0.009463, -0.109651
         aim_hud_offset_pos_16x9          = -0.047584, -0.009463, -0.109651
         aim_hud_offset_rot               = 0.018069, 0.007936, 0.013
         aim_hud_offset_rot_16x9          = 0.018069, 0.007936, 0.013
-		
+
+        aim_hud_offset_alt_pos           = -0.048002, -0.037534, -0.109651
+        aim_hud_offset_alt_pos_16x9      = -0.048002, -0.037534, -0.109651
+        aim_hud_offset_alt_rot           = 0.015362, 0.010702, 0.013
+        aim_hud_offset_alt_rot_16x9      = 0.015362, 0.010702, 0.013		
+;--------------------------------------------------------------------------------
+[wpn_a545_spec_alt]:wpn_a545
+hud							= wpn_a545_spec_alt_hud
+visual                      = dynamics\weapons\wpn_a545\wpn_a545_specter.ogf
+
+1icon_layer                 = specter
+1icon_layer_x               = 75
+1icon_layer_y               = -20
+
+zoom_step_count				= 1
+scope_status                = 1
+scope_zoom_factor           = 30
+zoom_rotate_time            = 0.25
+scope_dynamic_zoom          = on
+scope_zoom_factor_alt       = 0
+
+use_alt_aim_hud 						 = true
+
+[wpn_a545_spec_alt_hud]:wpn_a545_hud
+item_visual				= anomaly_weapons\wpn_a545\wpn_a545_spec_alt_hud.ogf
+        aim_hud_offset_pos               = -0.047584, -0.009463, -0.109651
+        aim_hud_offset_pos_16x9          = -0.047584, -0.009463, -0.109651
+        aim_hud_offset_rot               = 0.018069, 0.007936, 0.013
+        aim_hud_offset_rot_16x9          = 0.018069, 0.007936, 0.013
+
+        aim_hud_offset_alt_pos           = -0.055469, -0.051759, -0.075449
+        aim_hud_offset_alt_pos_16x9      = -0.055469, -0.051759, -0.075449
+        aim_hud_offset_alt_rot           = 0, 0.001539, 0.75
+        aim_hud_offset_alt_rot_16x9      = 0, 0.001539, 0.75		
 ;--------------------------------------------------------------------------------
 [wpn_a545_tac30]:wpn_a545
 hud							= wpn_a545_tac30_hud
@@ -520,11 +575,38 @@ scope_dynamic_zoom          = on
 
 [wpn_a545_march_f_shorty_hud]:wpn_a545_hud
 item_visual				= anomaly_weapons\wpn_a545\wpn_a545_march_short_hud.ogf
-        aim_hud_offset_pos               = -0.04761, -0.00806, -0.115645
-        aim_hud_offset_pos_16x9          = -0.04761, -0.00806, -0.115645
-        aim_hud_offset_rot               = 0.018504, 0.007682, 0.013
-        aim_hud_offset_rot_16x9          = 0.018504, 0.007682, 0.013
+        aim_hud_offset_pos               = -0.047597, -0.008042, -0.115148
+        aim_hud_offset_pos_16x9          = -0.047597, -0.008042, -0.115148
+        aim_hud_offset_rot               = 0.018432, 0.007643, 0.013
+        aim_hud_offset_rot_16x9          = 0.018432, 0.007643, 0.013
 		
+;--------------------------------------------------------------------------------
+[wpn_a545_march_f_shorty_alt]:wpn_a545
+hud							= wpn_a545_march_f_shorty_alt_hud
+visual                      = dynamics\weapons\wpn_a545\wpn_a545_specter.ogf
+
+1icon_layer                 = march_f_shorty
+1icon_layer_x               = 75
+1icon_layer_y               = -20
+
+scope_status                = 1
+scope_zoom_factor           = 15
+zoom_rotate_time            = 0.25
+scope_dynamic_zoom          = on
+
+use_alt_aim_hud 						 = true
+
+[wpn_a545_march_f_shorty_alt_hud]:wpn_a545_hud
+item_visual				= anomaly_weapons\wpn_a545\wpn_a545_march_short_alt_hud.ogf
+        aim_hud_offset_pos               = -0.047597, -0.008042, -0.115148
+        aim_hud_offset_pos_16x9          = -0.047597, -0.008042, -0.115148
+        aim_hud_offset_rot               = 0.018432, 0.007643, 0.013
+        aim_hud_offset_rot_16x9          = 0.018432, 0.007643, 0.013
+
+        aim_hud_offset_alt_pos           = -0.055469, -0.051759, -0.075449
+        aim_hud_offset_alt_pos_16x9      = -0.055469, -0.051759, -0.075449
+        aim_hud_offset_alt_rot           = 0, 0.001539, 0.75
+        aim_hud_offset_alt_rot_16x9      = 0, 0.001539, 0.75		
 ;--------------------------------------------------------------------------------
 [wpn_a545_leupold]:wpn_a545
 hud							= wpn_a545_leupold_hud
@@ -548,6 +630,34 @@ item_visual				= anomaly_weapons\wpn_a545\wpn_a545_leupold_hud.ogf
         aim_hud_offset_rot_16x9          = 0.01831, 0.00835, 0.013
 		
 ;--------------------------------------------------------------------------------
+[wpn_a545_mark8_rmr]:wpn_a545
+hud							= wpn_a545_mark8_rmr_hud
+visual                      = dynamics\weapons\wpn_a545\wpn_a545_specter.ogf
+
+1icon_layer                 = leupold
+1icon_layer_x               = 75
+1icon_layer_y               = -20
+
+scope_status                = 1
+scope_zoom_factor           = 15
+zoom_rotate_time            = 0.25
+scope_dynamic_zoom          = on
+
+use_alt_aim_hud 						 = true
+
+[wpn_a545_mark8_rmr_hud]:wpn_a545_hud
+item_visual				= anomaly_weapons\wpn_a545\wpn_a545_leupold_alt_hud.ogf
+        aim_hud_offset_pos               = -0.047907, -0.01065, -0.082416
+        aim_hud_offset_pos_16x9          = -0.047907, -0.01065, -0.082416
+        aim_hud_offset_rot               = 0.01831, 0.00835, 0.013
+        aim_hud_offset_rot_16x9          = 0.01831, 0.00835, 0.013
+
+        aim_hud_offset_alt_pos           = -0.055469, -0.051759, -0.075449
+        aim_hud_offset_alt_pos_16x9      = -0.055469, -0.051759, -0.075449
+        aim_hud_offset_alt_rot           = 0, 0.001539, 0.75
+        aim_hud_offset_alt_rot_16x9      = 0, 0.001539, 0.75		
+;--------------------------------------------------------------------------------
+
 [wpn_a545_ps320]:wpn_a545
 hud							= wpn_a545_ps320_hud
 visual                      = dynamics\weapons\wpn_a545\wpn_a545_specter.ogf
