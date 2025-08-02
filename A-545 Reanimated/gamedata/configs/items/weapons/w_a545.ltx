@@ -64,7 +64,7 @@ light_time                               = 0.2
 light_var_color                          = 0.05
 light_var_range                          = 0.5
 
-upgrades                                 = up_gr_firstab_aekkit, up_gr_seconab_aekkit, up_gr_thirdab_aekkit, up_gr_fourtab_aekkit, up_gr_fifthab_aekkit
+upgrades                                 = up_gr_firstab_aekkit, up_gr_seconab_aekkit, up_gr_thirdab_aekkit
 installed_upgrades                       =
 upgrade_scheme              			 = upgrade_scheme_abakan
 upgr_icon_path     						 = ui\ui_icons_aekkit
@@ -79,7 +79,7 @@ ammo_elapsed                             = 30
 ammo_mag_size                            = 30
 startup_ammo                             = 90
 
-scopes                                   = ac10632, eot, c-more, eot, e0t2, compm4s, aimpoint, ekp8_18, kemper, acog, triji, 1p59, leupold, mark8_rmr, gauss_sight, pn23, specter, spec_alt, march_f_shorty, march_f_shorty_alt, tac30, ps320
+scopes                                   = ac10632, eot, c-more, eot, e0t2, aimpoint, kemper, acog, triji, 1p59, leupold, mark8_rmr, gauss_sight, pn23, specter, spec_alt, march_f_shorty, march_f_shorty_alt, tac30, ps320, echo1, p1x42, 1p87, t12, bossxe, romeo8, ekp8_18
 scope_status                             = 0
 scope_zoom_factor                        = 0
 
@@ -96,8 +96,8 @@ silencer_smoke_particles                 = weapons\generic_shoot_00
 
 grenade_class                            = ammo_vog-25, ammo_vog-25_bad, ammo_vog-25_verybad
 grenade_launcher_name                    = wpn_addon_grenade_launcher
-grenade_launcher_status                  = 2
-grenade_launcher_x          			 = 156
+grenade_launcher_status                  = 2;
+grenade_launcher_x          			 = 125
 grenade_launcher_y          			 = 14
 launch_speed                             = 0
 
@@ -163,14 +163,35 @@ kill_msg_y                               = 28
 kill_msg_width                           = 84
 kill_msg_height                          = 28
 
-snd_bore                = $no_sound
-snd_draw                = weapons\aek\aek_draw
-snd_holster             = weapons\aek\aek_hide
+snd_show 			= weapons\aek\aek_show
+snd_hide 			= weapons\aek\aek_hide
+snd_show_w_gl		= weapons\aek\aek_show
+snd_hide_w_gl 		= weapons\aek\aek_hide
+snd_show_g 			= weapons\aek\aek_gl_on
+snd_hide_g 			= weapons\aek\aek_gl_off
 
-snd_empty               = weapons\aek\aek_empty
-snd_reload              = weapons\aek\aek_m1_reload
-snd_reload_empty        = weapons\aek\aek_m1_reload_empty
-snd_reload_misfire      = weapons\aek\aek_m1_misfire
+snd_empty               = weapons\aekcustom\aek_empty
+snd_reload              = weapons\aek\aek_r
+snd_reload_empty        = weapons\aek\aek_re
+
+snd_reload_misfire      = weapons\aek\aek_mis
+
+snd_switch_mode		= weapons\aek\aek_mode_switch
+snd_switch_g 		= weapons\aek\aek_gl_on
+snd_switch 			= weapons\aek\aek_gl_off
+
+snd_shoot_grenade		= weapons\aek\aek_gl_shoot
+snd_reload_grenade		= weapons\aek\aek_gl_re
+
+snd_ammo_check 				= weapons\aek\aek_ammo_check
+snd_ammo_check_empty 			= weapons\aek\aek_ammo_check
+snd_ammo_check_w_gl 			= weapons\aek\aek_ammo_check
+snd_ammo_check_empty_w_gl 		= weapons\aek\aek_ammo_check
+snd_ammo_check_aim 			= weapons\aek\aek_ammo_check
+snd_ammo_check_empty_aim 		= weapons\aek\aek_ammo_check
+snd_ammo_check_w_gl_aim 		= weapons\aek\aek_ammo_check
+snd_ammo_check_empty_w_gl_aim 	= weapons\aek\aek_ammo_check
+
 
 lewd_lens_hide_enabled       = true
 lewd_lens_hide_bone          = lens
@@ -183,23 +204,23 @@ item_visual                              = anomaly_weapons\wpn_a545\wpn_a545_hud
 attach_place_idx                         = 0
 zoom_hide_crosshair                      = true   
 
-        aim_hud_offset_pos               = -0.048104, 0.012622, -0.035991
-        aim_hud_offset_pos_16x9          = -0.048104, 0.012622, -0.035991
-        aim_hud_offset_rot               = 0.008593, 0.01163, 0.00301
-        aim_hud_offset_rot_16x9          = 0.008593, 0.01163, 0.00301
+        aim_hud_offset_pos               = -0.079124, 0.040916, -0.06
+        aim_hud_offset_pos_16x9          = -0.079124, 0.040916, -0.06
+        aim_hud_offset_rot               = -0.000858, -0.026199, 0.02
+        aim_hud_offset_rot_16x9          = -0.000858, -0.026199, 0.02
 		
-        gl_hud_offset_pos                = -0.074613, -0.323737, -0.247373
-        gl_hud_offset_pos_16x9           = -0.074613, -0.323737, -0.247373
-        gl_hud_offset_rot                = -0.599455, 0.06905, 0.088895
-        gl_hud_offset_rot_16x9           = -0.599455, 0.06905, 0.088895
+        gl_hud_offset_pos                = -0.115887, -0.348682, -0.247373
+        gl_hud_offset_pos_16x9           = -0.115887, -0.348682, -0.247373
+        gl_hud_offset_rot                = -0.62996, 0.040937, 0.088895
+        gl_hud_offset_rot_16x9           = -0.62996, 0.040937, 0.088895
 		
-        hands_orientation                = 0.55, 2.389431, 0.15
-        hands_orientation_16x9           = 0.55, 2.389431, 0.15
-        hands_position                   = -0.019082, -0.017294, 0.034675
-        hands_position_16x9              = -0.019082, -0.017294, 0.034675
+        hands_orientation                = 1.451546, 1.370557, 0.15
+        hands_orientation_16x9           = 1.451546, 1.370557, 0.15
+        hands_position                   = 0.030176, -0.047816, 0.105504
+        hands_position_16x9              = 0.030176, -0.047816, 0.105504
 		
-        item_orientation                 = 0.351262, -0.669, 0
-        item_position                    = 0.002573, 0.01158, -0.011504
+        item_orientation                 = -2.707085, -1.111617, 0
+        item_position                    = -0.006142, 0.013071, -0.012052
 		
         lowered_hud_offset_pos           = 0.1396, -0.004617, 0.044444
         lowered_hud_offset_pos_16x9      = 0.1396, -0.004617, 0.044444
@@ -258,10 +279,7 @@ anm_switch_mode_w_gl                          = aek_new_mod_switch_w_gl, idle
 anm_switch_mode_w_gl_aim                          = aek_new_mod_switch_w_gl_aim, idle
 anm_sprint_start_w_gl             = aek_new_sprint_start_w_gl, idle
 anm_sprint_end_w_gl               = aek_new_sprint_end_w_gl, idle
-anm_ammo_check_w_gl                   = aek_new_ammo_check_w_gl, aek_new_ammo_check_w_gl
-anm_ammo_check_empty_w_gl             = aek_new_ammo_check_empty_w_gl, aek_new_ammo_check_empty_w_gl
-anm_ammo_check_w_gl_aim                   = aek_new_ammo_check_aim_w_gl, aek_new_ammo_check_aim_w_gl
-anm_ammo_check_empty_w_gl_aim             = aek_new_ammo_check_aim_w_gl, aek_new_ammo_check_empty_aim_w_gl 
+
 ;-----	 
 ;anm_bore_g                              = blnd_ak74m_inspect_gl, idle
 anm_hide_g                               = aek_new_hide_g
@@ -287,7 +305,7 @@ ts_strict_sprint_end_move          = anm_sprint_start, anm_idle_moving, anm_spri
 
 shell_point                 			 = 0,0,0
 shell_bone                				 = gilza
-fire_point								 = 0,0,0
+fire_point								 = 0.0037,-0.0085,-0.052
 fire_bone                   			 = muzzle
 fire_point2                 			 = 0,0,0
 fire_bone2                				 = muzzle_gl
@@ -295,9 +313,8 @@ fire_bone2                				 = muzzle_gl
 ;--------------------------------------------------------------------------------
 [wpn_a545_eot]:wpn_a545
 hud                                      = wpn_a545_eot_hud
-visual                                   = dynamics\weapons\wpn_a545\wpn_a545_eot.ogf
 
-1icon_layer                              = eot
+1icon_layer                              = eot_x
 1icon_layer_x                            = 92
 1icon_layer_y                            = -16
 
@@ -306,18 +323,15 @@ inv_weight                               = 3.5
 [wpn_a545_eot_hud]:wpn_a545_hud
 item_visual                              = anomaly_weapons\wpn_a545\wpn_a545_eot_hud.ogf
 
-        aim_hud_offset_pos               = -0.046669, -0.009156, -0.062597
-        aim_hud_offset_pos_16x9          = -0.046669, -0.009156, -0.062597
-        aim_hud_offset_rot               = 0.032589, 0.005134, 0.013
-        aim_hud_offset_rot_16x9          = 0.032589, 0.005134, 0.013
-
-
+        aim_hud_offset_pos               = -0.080284, 0.013818, -0.06
+        aim_hud_offset_pos_16x9          = -0.080284, 0.013818, -0.06
+        aim_hud_offset_rot               = 0.00467, -0.024675, 0.02
+        aim_hud_offset_rot_16x9          = 0.00467, -0.024675, 0.02
 ;--------------------------------------------------------------------------------
 [wpn_a545_c-more]:wpn_a545
 hud                                      = wpn_a545_c-more_hud
-visual                                   = dynamics\weapons\wpn_a545\wpn_a545_c-more.ogf
 
-1icon_layer                              = c-more
+1icon_layer                              = c-more_x
 1icon_layer_x                            = 92
 1icon_layer_y                            = -15
 
@@ -326,121 +340,183 @@ inv_weight                               = 3.5
 [wpn_a545_c-more_hud]:wpn_a545_hud
 item_visual                              = anomaly_weapons\wpn_a545\wpn_a545_c-more_hud.ogf
 
-        aim_hud_offset_pos               = -0.047889, -0.008039, -0.064533
-        aim_hud_offset_pos_16x9          = -0.047889, -0.008039, -0.064533
-        aim_hud_offset_rot               = 0.001695, 0.009747, 0.013
-        aim_hud_offset_rot_16x9          = 0.001695, 0.009747, 0.013
-
+        aim_hud_offset_pos               = -0.079637, 0.023862, -0.06
+        aim_hud_offset_pos_16x9          = -0.079637, 0.023862, -0.06
+        aim_hud_offset_rot               = 0.004818, -0.025713, 0.02
+        aim_hud_offset_rot_16x9          = 0.004818, -0.025713, 0.02
 ;--------------------------------------------------------------------------------
 [wpn_a545_ac10632]:wpn_a545
 hud                                      = wpn_a545_ac10632_hud
-visual                                   = dynamics\weapons\wpn_a545\wpn_a545_ac10632.ogf
 
-1icon_layer                              = ac10632
+1icon_layer                              = ac10632_x
 1icon_layer_x                            = 92
-1icon_layer_y                            = -16
+1icon_layer_y                            = -18
 
 inv_weight                               = 3.3
 
 [wpn_a545_ac10632_hud]:wpn_a545_hud
 item_visual                              = anomaly_weapons\wpn_a545\wpn_a545_ac10632_hud.ogf
 
-        aim_hud_offset_pos               = -0.047889, -0.008039, -0.064533
-        aim_hud_offset_pos_16x9          = -0.047889, -0.008039, -0.064533
-        aim_hud_offset_rot               = 0.001695, 0.009747, 0.013
-        aim_hud_offset_rot_16x9          = 0.001695, 0.009747, 0.013
-;--------------------------------------------------------------------------------
-[wpn_a545_compm4s]:wpn_a545
-hud					= wpn_a545_compm4s_hud
-visual                                   = dynamics\weapons\wpn_a545\wpn_a545_compm4s.ogf
-
-1icon_layer                              = compm4s
-1icon_layer_x                            = 90
-1icon_layer_y                            = -22
-
-inv_weight                               = 3.5
-
-[wpn_a545_compm4s_hud]:wpn_a545_hud
-item_visual                		= anomaly_weapons\wpn_a545\wpn_a545_compm4s_hud.ogf
-        aim_hud_offset_pos               = -0.048613, -0.009007, -0.06358
-        aim_hud_offset_pos_16x9          = -0.048613, -0.009007, -0.06358
-        aim_hud_offset_rot               = 0.011465, 0.012965, 0.013
-        aim_hud_offset_rot_16x9          = 0.011465, 0.012965, 0.013
-		
+        aim_hud_offset_pos               = -0.080701, 0.021399, -0.06
+        aim_hud_offset_pos_16x9          = -0.080701, 0.021399, -0.06
+        aim_hud_offset_rot               = 0.003793, -0.02451, 0.02
+        aim_hud_offset_rot_16x9          = 0.003793, -0.02451, 0.02
 ;--------------------------------------------------------------------------------
 [wpn_a545_e0t2]:wpn_a545
 hud						= wpn_a545_e0t2_hud
-visual                                   = dynamics\weapons\wpn_a545\wpn_a545_e0t2.ogf
 
-1icon_layer			    = e0t2
+1icon_layer			    = e0t2_x
 1icon_layer_x			= 87
 1icon_layer_y			= -21
 
 [wpn_a545_e0t2_hud]:wpn_a545_hud
 item_visual				= anomaly_weapons\wpn_a545\wpn_a545_e0t2_hud.ogf
-        aim_hud_offset_pos               = -0.048451, -0.008227, -0.065067
-        aim_hud_offset_pos_16x9          = -0.048451, -0.008227, -0.065067
-        aim_hud_offset_rot               = 0.009855, 0.011589, 0.013
-        aim_hud_offset_rot_16x9          = 0.009855, 0.011589, 0.013
 
+        aim_hud_offset_pos               = -0.080404, 0.020697, -0.06
+        aim_hud_offset_pos_16x9          = -0.080404, 0.020697, -0.06
+        aim_hud_offset_rot               = 0.00327, -0.024967, 0.02
+        aim_hud_offset_rot_16x9          = 0.00327, -0.024967, 0.02
 ;--------------------------------------------------------------------------------
 [wpn_a545_kemper]:wpn_a545
 hud				= wpn_a545_kemper_hud
-visual                                   = dynamics\weapons\wpn_a545\wpn_a545_kemper.ogf
 
-1icon_layer			    = kemper
+1icon_layer			    = kemper_x
 1icon_layer_x			= 90
 1icon_layer_y			= -19
 
 [wpn_a545_kemper_hud]:wpn_a545_hud
 item_visual                	= anomaly_weapons\wpn_a545\wpn_a545_kemper_hud.ogf
-        aim_hud_offset_pos               = -0.04787, -0.011776, -0.064932
-        aim_hud_offset_pos_16x9          = -0.04787, -0.011776, -0.064932
-        aim_hud_offset_rot               = 0.009715, 0.01055, 0.013
-        aim_hud_offset_rot_16x9          = 0.009715, 0.01055, 0.013
 
+         aim_hud_offset_pos               = -0.080074, 0.016204, -0.06
+        aim_hud_offset_pos_16x9          = -0.080074, 0.016204, -0.06
+        aim_hud_offset_rot               = 0.002679, -0.025564, 0.02
+        aim_hud_offset_rot_16x9          = 0.002679, -0.025564, 0.02
 ;--------------------------------------------------------------------------------
 [wpn_a545_aimpoint]:wpn_a545
 hud						= wpn_a545_aimpoint_hud
-visual                                   = dynamics\weapons\wpn_a545\wpn_a545_aimpoint.ogf
 
-1icon_layer			    = aimpoint
-1icon_layer_x			= 85
-1icon_layer_y			= -13
+1icon_layer			    = aimpoint_x
+1icon_layer_x			= 86
+1icon_layer_y			= -24
 
 [wpn_a545_aimpoint_hud]:wpn_a545_hud
 item_visual				= anomaly_weapons\wpn_a545\wpn_a545_aimpoint_hud.ogf
-        aim_hud_offset_pos               = -0.04787, -0.011776, -0.064932
-        aim_hud_offset_pos_16x9          = -0.04787, -0.011776, -0.064932
-        aim_hud_offset_rot               = 0.009715, 0.01055, 0.013
-        aim_hud_offset_rot_16x9          = 0.009715, 0.01055, 0.013
-		
+
+        aim_hud_offset_pos               = -0.079401, 0.022595, -0.06
+        aim_hud_offset_pos_16x9          = -0.079401, 0.022595, -0.06
+        aim_hud_offset_rot               = 0.003635, -0.025619, 0.02
+        aim_hud_offset_rot_16x9          = 0.003635, -0.025619, 0.02
 ;--------------------------------------------------------------------------------
 [wpn_a545_ekp8_18]:wpn_a545
 hud						= wpn_a545_ekp8_18_hud
-visual                                   = dynamics\weapons\wpn_a545\wpn_a545_ekp8_18.ogf
 
-1icon_layer			    = ekp8_18
+1icon_layer			    = ekp8_18_x
 1icon_layer_x			= 90
 1icon_layer_y			= -10
 
 [wpn_a545_ekp8_18_hud]:wpn_a545_hud
 item_visual				= anomaly_weapons\wpn_a545\wpn_a545_ekp8_18_hud.ogf
-        aim_hud_offset_pos               = -0.046015, -0.00922, -0.064312
-        aim_hud_offset_pos_16x9          = -0.046015, -0.00922, -0.064312
-        aim_hud_offset_rot               = 0.014851, 0.00477, 0.013
-        aim_hud_offset_rot_16x9          = 0.014851, 0.00477, 0.013
+
+        aim_hud_offset_pos               = -0.080277, 0.010465, -0.06
+        aim_hud_offset_pos_16x9          = -0.080277, 0.010465, -0.06
+        aim_hud_offset_rot               = -0.00899, -0.024671, 0.02
+        aim_hud_offset_rot_16x9          = -0.00899, -0.024671, 0.02
+;--------------------------------------------------------------------------------
+[wpn_a545_bossxe]:wpn_a545
+hud						= wpn_a545_bossxe_hud
+
+1icon_layer			    = bossxe_x
+1icon_layer_x			= 89
+1icon_layer_y			= -20
+
+use_alt_aim_hud			= true
+laser_status			= true
+
+[wpn_a545_bossxe_hud]:wpn_a545_hud
+item_visual				= anomaly_weapons\wpn_a545\wpn_a545_bossxe_hud.ogf
+
+        hands_orientation                = 3.38564, 1.148121, 0.15
+        hands_orientation_16x9           = 3.38564, 1.148121, 0.15
+		
+        aim_hud_offset_pos               = -0.079376, 0.011103, -0.06
+        aim_hud_offset_pos_16x9          = -0.079376, 0.011103, -0.06
+        aim_hud_offset_rot               = 0.004432, -0.025902, 0.02
+        aim_hud_offset_rot_16x9          = 0.004432, -0.025902, 0.02
+
+        aim_hud_offset_alt_pos           = -0.125874, -0.086332, -0.025319
+        aim_hud_offset_alt_pos_16x9      = -0.125874, -0.086332, -0.025319
+        aim_hud_offset_alt_rot           = 0.001207, -0.019683, 0.532132
+        aim_hud_offset_alt_rot_16x9      = 0.001207, -0.019683, 0.532132		
+;--------------------------------------------------------------------------------
+[wpn_a545_p1x42]:wpn_a545
+hud						= wpn_a545_p1x42_hud
+
+1icon_layer			    = p1x42_x
+1icon_layer_x			= 88
+1icon_layer_y			= -23
+
+[wpn_a545_p1x42_hud]:wpn_a545_hud
+item_visual				= anomaly_weapons\wpn_a545\wpn_a545_p1x42_hud.ogf
+
+        aim_hud_offset_pos               = -0.080043, 0.020736, -0.06
+        aim_hud_offset_pos_16x9          = -0.080043, 0.020736, -0.06
+        aim_hud_offset_rot               = 0.005171, -0.025447, 0.02
+        aim_hud_offset_rot_16x9          = 0.005171, -0.025447, 0.02
+;--------------------------------------------------------------------------------
+[wpn_a545_1p87]:wpn_a545
+hud						= wpn_a545_1p87_hud
+
+1icon_layer			    = 1p87_x
+1icon_layer_x			= 91
+1icon_layer_y			= -22
+
+[wpn_a545_1p87_hud]:wpn_a545_hud
+item_visual				= anomaly_weapons\wpn_a545\wpn_a545_1p87_hud.ogf
+
+        aim_hud_offset_pos               = -0.080303, 0.007403, -0.06
+        aim_hud_offset_pos_16x9          = -0.080303, 0.007403, -0.06
+        aim_hud_offset_rot               = 0.003995, -0.02507, 0.02
+        aim_hud_offset_rot_16x9          = 0.003995, -0.02507, 0.02
+;--------------------------------------------------------------------------------
+[wpn_a545_t12]:wpn_a545
+hud						= wpn_a545_t12_hud
+
+1icon_layer			    = t12_x
+1icon_layer_x			= 86
+1icon_layer_y			= -20
+
+[wpn_a545_t12_hud]:wpn_a545_hud
+item_visual				= anomaly_weapons\wpn_a545\wpn_a545_t12_hud.ogf
+
+        aim_hud_offset_pos               = -0.079637, 0.023862, -0.06
+        aim_hud_offset_pos_16x9          = -0.079637, 0.023862, -0.06
+        aim_hud_offset_rot               = 0.014291, -0.025049, 0.02
+        aim_hud_offset_rot_16x9          = 0.014291, -0.025049, 0.02	
+;--------------------------------------------------------------------------------
+[wpn_a545_romeo8]:wpn_a545
+hud						= wpn_a545_romeo8_hud
+
+1icon_layer			    = romeo8_x
+1icon_layer_x			= 84
+1icon_layer_y			= -25
+
+[wpn_a545_romeo8_hud]:wpn_a545_hud
+item_visual				= anomaly_weapons\wpn_a545\wpn_a545_romeo8_hud.ogf
+
+        aim_hud_offset_pos               = -0.080283, 0.016778, -0.06
+        aim_hud_offset_pos_16x9          = -0.080283, 0.016778, -0.06
+        aim_hud_offset_rot               = 0.003683, -0.025008, 0.02
+        aim_hud_offset_rot_16x9          = 0.003683, -0.025008, 0.02
 		
 ;------------------------------------------------------------------------------------------------
 ;-- A-545 SCOPES
 ;------------------------------------------------------------------------------------------------
 [wpn_a545_acog]:wpn_a545
-1icon_layer                              = acog
+hud                                      = wpn_a545_acog_hud
+
+1icon_layer                              = acog_x
 1icon_layer_x                            = 92
 1icon_layer_y                            = -16
-
-hud                                      = wpn_a545_acog_hud
-visual                                   = dynamics\weapons\wpn_a545\wpn_a545_acog.ogf
 
 scope_status                             = 1
 scope_zoom_factor                        = 42.86
@@ -448,19 +524,18 @@ zoom_rotate_time                         = 0.25
 
 [wpn_a545_acog_hud]:wpn_a545_hud
 item_visual                              = anomaly_weapons\wpn_a545\wpn_a545_acog_hud.ogf
-        aim_hud_offset_pos               = -0.047661, -0.007648, -0.114713
-        aim_hud_offset_pos_16x9          = -0.047661, -0.007648, -0.114713
-        aim_hud_offset_rot               = 0.025967, 0.007827, 0.013
-        aim_hud_offset_rot_16x9          = 0.025967, 0.007827, 0.013
 
+        aim_hud_offset_pos               = -0.078251, 0.021209, -0.190683
+        aim_hud_offset_pos_16x9          = -0.078251, 0.021209, -0.190683
+        aim_hud_offset_rot               = 0.014506, -0.030065, 0.02
+        aim_hud_offset_rot_16x9          = 0.014506, -0.030065, 0.02
 ;--------------------------------------------------------------------------------
 [wpn_a545_triji]:wpn_a545
-1icon_layer                              = acog
+hud                                      = wpn_a545_triji_hud
+
+1icon_layer                              = acog_x
 1icon_layer_x                            = 92
 1icon_layer_y                            = -16
-
-hud                                      = wpn_a545_triji_hud
-visual                                   = dynamics\weapons\wpn_a545\wpn_a545_acog.ogf
 
 scope_status                             = 1
 scope_zoom_factor                        = 42.86
@@ -470,79 +545,79 @@ use_alt_aim_hud 						 = true
 
 [wpn_a545_triji_hud]:wpn_a545_hud
 item_visual                              = anomaly_weapons\wpn_a545\wpn_a545_triji_hud.ogf
-        aim_hud_offset_pos               = -0.047661, -0.007648, -0.114713
-        aim_hud_offset_pos_16x9          = -0.047661, -0.007648, -0.114713
-        aim_hud_offset_rot               = 0.025967, 0.007827, 0.013
-        aim_hud_offset_rot_16x9          = 0.025967, 0.007827, 0.013
 
-        aim_hud_offset_alt_pos           = -0.055469, -0.051759, -0.075449
-        aim_hud_offset_alt_pos_16x9      = -0.055469, -0.051759, -0.075449
-        aim_hud_offset_alt_rot           = 0, 0.001539, 0.75
-        aim_hud_offset_alt_rot_16x9      = 0, 0.001539, 0.75
+        aim_hud_offset_pos               = -0.078251, 0.021209, -0.190683
+        aim_hud_offset_pos_16x9          = -0.078251, 0.021209, -0.190683
+        aim_hud_offset_rot               = 0.014506, -0.030065, 0.02
+        aim_hud_offset_rot_16x9          = 0.014506, -0.030065, 0.02
+
+        aim_hud_offset_alt_pos           = -0.103947, -0.053535, -0.075449
+        aim_hud_offset_alt_pos_16x9      = -0.103947, -0.053535, -0.075449
+        aim_hud_offset_alt_rot           = 0.003389, -0.02506, 0.78
+        aim_hud_offset_alt_rot_16x9      = 0.003389, -0.02506, 0.78
 ;--------------------------------------------------------------------------------
 [wpn_a545_specter]:wpn_a545
 hud							= wpn_a545_specter_hud
-visual                      = dynamics\weapons\wpn_a545\wpn_a545_specter.ogf
 
-1icon_layer                 = specter
+1icon_layer                 = specter_x
 1icon_layer_x               = 75
 1icon_layer_y               = -20
 
-zoom_step_count				= 1
+
 scope_status                = 1
 scope_zoom_factor           = 30
 zoom_rotate_time            = 0.25
 scope_dynamic_zoom          = on
-scope_zoom_factor_alt       = 0
+zoom_step_count				= 1
 
 use_alt_aim_hud 						 = true
 
 [wpn_a545_specter_hud]:wpn_a545_hud
 item_visual				= anomaly_weapons\wpn_a545\wpn_a545_specter_hud.ogf
-        aim_hud_offset_pos               = -0.047584, -0.009463, -0.109651
-        aim_hud_offset_pos_16x9          = -0.047584, -0.009463, -0.109651
-        aim_hud_offset_rot               = 0.018069, 0.007936, 0.013
-        aim_hud_offset_rot_16x9          = 0.018069, 0.007936, 0.013
 
-        aim_hud_offset_alt_pos           = -0.048002, -0.037534, -0.109651
-        aim_hud_offset_alt_pos_16x9      = -0.048002, -0.037534, -0.109651
-        aim_hud_offset_alt_rot           = 0.015362, 0.010702, 0.013
-        aim_hud_offset_alt_rot_16x9      = 0.015362, 0.010702, 0.013		
+        aim_hud_offset_pos               = -0.078, 0.017526, -0.178383
+        aim_hud_offset_pos_16x9          = -0.078, 0.017526, -0.178383
+        aim_hud_offset_rot               = 0.008019, -0.029874, 0.02
+        aim_hud_offset_rot_16x9          = 0.008019, -0.029874, 0.02
+
+        aim_hud_offset_alt_pos           = -0.079286, -0.011219, -0.06
+        aim_hud_offset_alt_pos_16x9      = -0.079286, -0.011219, -0.06
+        aim_hud_offset_alt_rot           = 0.00822, -0.024903, 0.02
+        aim_hud_offset_alt_rot_16x9      = 0.00822, -0.024903, 0.02		
 ;--------------------------------------------------------------------------------
 [wpn_a545_spec_alt]:wpn_a545
 hud							= wpn_a545_spec_alt_hud
-visual                      = dynamics\weapons\wpn_a545\wpn_a545_specter.ogf
 
-1icon_layer                 = specter
+1icon_layer                 = specter_x
 1icon_layer_x               = 75
 1icon_layer_y               = -20
 
-zoom_step_count				= 1
+
 scope_status                = 1
 scope_zoom_factor           = 30
 zoom_rotate_time            = 0.25
 scope_dynamic_zoom          = on
-scope_zoom_factor_alt       = 0
+zoom_step_count				= 1
 
 use_alt_aim_hud 						 = true
 
 [wpn_a545_spec_alt_hud]:wpn_a545_hud
 item_visual				= anomaly_weapons\wpn_a545\wpn_a545_spec_alt_hud.ogf
-        aim_hud_offset_pos               = -0.047584, -0.009463, -0.109651
-        aim_hud_offset_pos_16x9          = -0.047584, -0.009463, -0.109651
-        aim_hud_offset_rot               = 0.018069, 0.007936, 0.013
-        aim_hud_offset_rot_16x9          = 0.018069, 0.007936, 0.013
 
-        aim_hud_offset_alt_pos           = -0.055469, -0.051759, -0.075449
-        aim_hud_offset_alt_pos_16x9      = -0.055469, -0.051759, -0.075449
-        aim_hud_offset_alt_rot           = 0, 0.001539, 0.75
-        aim_hud_offset_alt_rot_16x9      = 0, 0.001539, 0.75		
+        aim_hud_offset_pos               = -0.078, 0.017526, -0.178383
+        aim_hud_offset_pos_16x9          = -0.078, 0.017526, -0.178383
+        aim_hud_offset_rot               = 0.008019, -0.029874, 0.02
+        aim_hud_offset_rot_16x9          = 0.008019, -0.029874, 0.02
+
+        aim_hud_offset_alt_pos           = -0.103947, -0.053535, -0.075449
+        aim_hud_offset_alt_pos_16x9      = -0.103947, -0.053535, -0.075449
+        aim_hud_offset_alt_rot           = 0.003389, -0.02506, 0.78
+        aim_hud_offset_alt_rot_16x9      = 0.003389, -0.02506, 0.78	
 ;--------------------------------------------------------------------------------
 [wpn_a545_tac30]:wpn_a545
 hud							= wpn_a545_tac30_hud
-visual                      = dynamics\weapons\wpn_a545\wpn_a545_specter.ogf
 
-1icon_layer                 = tac30
+1icon_layer                 = tac30_x
 1icon_layer_x               = 70
 1icon_layer_y               = -19
 
@@ -554,16 +629,16 @@ scope_dynamic_zoom          = on
 
 [wpn_a545_tac30_hud]:wpn_a545_hud
 item_visual				= anomaly_weapons\wpn_a545\wpn_a545_tac30_hud.ogf
-        aim_hud_offset_pos               = -0.04748, -0.013053, -0.081231
-        aim_hud_offset_pos_16x9          = -0.04748, -0.013053, -0.081231
-        aim_hud_offset_rot               = 0.019229, 0.007505, 0.013
-        aim_hud_offset_rot_16x9          = 0.019229, 0.007505, 0.013
+
+        aim_hud_offset_pos               = -0.078624, 0.01491, -0.11988
+        aim_hud_offset_pos_16x9          = -0.078624, 0.01491, -0.11988
+        aim_hud_offset_rot               = 0.007746, -0.029651, 0.02
+        aim_hud_offset_rot_16x9          = 0.007746, -0.029651, 0.02
 ;--------------------------------------------------------------------------------
 [wpn_a545_march_f_shorty]:wpn_a545
 hud							= wpn_a545_march_f_shorty_hud
-visual                      = dynamics\weapons\wpn_a545\wpn_a545_specter.ogf
 
-1icon_layer                 = march_f_shorty
+1icon_layer                 = march_f_shorty_x
 1icon_layer_x               = 75
 1icon_layer_y               = -20
 
@@ -575,17 +650,16 @@ scope_dynamic_zoom          = on
 
 [wpn_a545_march_f_shorty_hud]:wpn_a545_hud
 item_visual				= anomaly_weapons\wpn_a545\wpn_a545_march_short_hud.ogf
-        aim_hud_offset_pos               = -0.047597, -0.008042, -0.115148
-        aim_hud_offset_pos_16x9          = -0.047597, -0.008042, -0.115148
-        aim_hud_offset_rot               = 0.018432, 0.007643, 0.013
-        aim_hud_offset_rot_16x9          = 0.018432, 0.007643, 0.013
-		
+
+        aim_hud_offset_pos               = -0.078037, 0.02246, -0.162579
+        aim_hud_offset_pos_16x9          = -0.078037, 0.02246, -0.162579
+        aim_hud_offset_rot               = 0.007929, -0.030419, 0.02
+        aim_hud_offset_rot_16x9          = 0.007929, -0.030419, 0.02
 ;--------------------------------------------------------------------------------
 [wpn_a545_march_f_shorty_alt]:wpn_a545
 hud							= wpn_a545_march_f_shorty_alt_hud
-visual                      = dynamics\weapons\wpn_a545\wpn_a545_specter.ogf
 
-1icon_layer                 = march_f_shorty
+1icon_layer                 = march_f_shorty_x
 1icon_layer_x               = 75
 1icon_layer_y               = -20
 
@@ -598,21 +672,21 @@ use_alt_aim_hud 						 = true
 
 [wpn_a545_march_f_shorty_alt_hud]:wpn_a545_hud
 item_visual				= anomaly_weapons\wpn_a545\wpn_a545_march_short_alt_hud.ogf
-        aim_hud_offset_pos               = -0.047597, -0.008042, -0.115148
-        aim_hud_offset_pos_16x9          = -0.047597, -0.008042, -0.115148
-        aim_hud_offset_rot               = 0.018432, 0.007643, 0.013
-        aim_hud_offset_rot_16x9          = 0.018432, 0.007643, 0.013
 
-        aim_hud_offset_alt_pos           = -0.055469, -0.051759, -0.075449
-        aim_hud_offset_alt_pos_16x9      = -0.055469, -0.051759, -0.075449
-        aim_hud_offset_alt_rot           = 0, 0.001539, 0.75
-        aim_hud_offset_alt_rot_16x9      = 0, 0.001539, 0.75		
+        aim_hud_offset_pos               = -0.078037, 0.02246, -0.162579
+        aim_hud_offset_pos_16x9          = -0.078037, 0.02246, -0.162579
+        aim_hud_offset_rot               = 0.007929, -0.030419, 0.02
+        aim_hud_offset_rot_16x9          = 0.007929, -0.030419, 0.02
+
+        aim_hud_offset_alt_pos           = -0.103947, -0.053535, -0.075449
+        aim_hud_offset_alt_pos_16x9      = -0.103947, -0.053535, -0.075449
+        aim_hud_offset_alt_rot           = 0.003389, -0.02506, 0.78
+        aim_hud_offset_alt_rot_16x9      = 0.003389, -0.02506, 0.78	
 ;--------------------------------------------------------------------------------
 [wpn_a545_leupold]:wpn_a545
 hud							= wpn_a545_leupold_hud
-visual                      = dynamics\weapons\wpn_a545\wpn_a545_specter.ogf
 
-1icon_layer                 = leupold
+1icon_layer                 = leupold_x
 1icon_layer_x               = 75
 1icon_layer_y               = -20
 
@@ -624,17 +698,16 @@ scope_dynamic_zoom          = on
 
 [wpn_a545_leupold_hud]:wpn_a545_hud
 item_visual				= anomaly_weapons\wpn_a545\wpn_a545_leupold_hud.ogf
-        aim_hud_offset_pos               = -0.047907, -0.01065, -0.082416
-        aim_hud_offset_pos_16x9          = -0.047907, -0.01065, -0.082416
-        aim_hud_offset_rot               = 0.01831, 0.00835, 0.013
-        aim_hud_offset_rot_16x9          = 0.01831, 0.00835, 0.013
-		
+
+        aim_hud_offset_pos               = -0.078181, 0.017023, -0.134615
+        aim_hud_offset_pos_16x9          = -0.078181, 0.017023, -0.134615
+        aim_hud_offset_rot               = 0.007948, -0.030208, 0.02
+        aim_hud_offset_rot_16x9          = 0.007948, -0.030208, 0.02
 ;--------------------------------------------------------------------------------
 [wpn_a545_mark8_rmr]:wpn_a545
 hud							= wpn_a545_mark8_rmr_hud
-visual                      = dynamics\weapons\wpn_a545\wpn_a545_specter.ogf
 
-1icon_layer                 = leupold
+1icon_layer                 = leupold_x
 1icon_layer_x               = 75
 1icon_layer_y               = -20
 
@@ -647,22 +720,22 @@ use_alt_aim_hud 						 = true
 
 [wpn_a545_mark8_rmr_hud]:wpn_a545_hud
 item_visual				= anomaly_weapons\wpn_a545\wpn_a545_leupold_alt_hud.ogf
-        aim_hud_offset_pos               = -0.047907, -0.01065, -0.082416
-        aim_hud_offset_pos_16x9          = -0.047907, -0.01065, -0.082416
-        aim_hud_offset_rot               = 0.01831, 0.00835, 0.013
-        aim_hud_offset_rot_16x9          = 0.01831, 0.00835, 0.013
 
-        aim_hud_offset_alt_pos           = -0.055469, -0.051759, -0.075449
-        aim_hud_offset_alt_pos_16x9      = -0.055469, -0.051759, -0.075449
-        aim_hud_offset_alt_rot           = 0, 0.001539, 0.75
-        aim_hud_offset_alt_rot_16x9      = 0, 0.001539, 0.75		
+        aim_hud_offset_pos               = -0.078181, 0.017023, -0.134615
+        aim_hud_offset_pos_16x9          = -0.078181, 0.017023, -0.134615
+        aim_hud_offset_rot               = 0.007948, -0.030208, 0.02
+        aim_hud_offset_rot_16x9          = 0.007948, -0.030208, 0.02
+
+        aim_hud_offset_alt_pos           = -0.103947, -0.053535, -0.075449
+        aim_hud_offset_alt_pos_16x9      = -0.103947, -0.053535, -0.075449
+        aim_hud_offset_alt_rot           = 0.003389, -0.02506, 0.78
+        aim_hud_offset_alt_rot_16x9      = 0.003389, -0.02506, 0.78		
 ;--------------------------------------------------------------------------------
 
 [wpn_a545_ps320]:wpn_a545
 hud							= wpn_a545_ps320_hud
-visual                      = dynamics\weapons\wpn_a545\wpn_a545_specter.ogf
 
-1icon_layer                 = ps320
+1icon_layer                 = ps320_x
 1icon_layer_x               = 68
 1icon_layer_y               = -21
 
@@ -675,19 +748,18 @@ zoom_step_count				= 1
 
 [wpn_a545_ps320_hud]:wpn_a545_hud
 item_visual				= anomaly_weapons\wpn_a545\wpn_a545_ps320_hud.ogf
-        aim_hud_offset_pos               = -0.047539, -0.008029, -0.103713
-        aim_hud_offset_pos_16x9          = -0.047539, -0.008029, -0.103713
-        aim_hud_offset_rot               = 0.018611, 0.007395, 0.013
-        aim_hud_offset_rot_16x9          = 0.018611, 0.007395, 0.013
-		
+
+        aim_hud_offset_pos               = -0.078805, 0.020628, -0.167874
+        aim_hud_offset_pos_16x9          = -0.078805, 0.020628, -0.167874
+        aim_hud_offset_rot               = 0.007501, -0.030116, 0.02
+        aim_hud_offset_rot_16x9          = 0.007501, -0.030116, 0.02
 ;-------------------------------------------------------------------------------------
 [wpn_a545_pn23]:wpn_a545
 hud					= wpn_a545_pn23_hud
-visual                                   = dynamics\weapons\wpn_a545\wpn_a545_pn23.ogf
 
-1icon_layer                              = pn23
-1icon_layer_x                            = 70
-1icon_layer_y                            = -22
+1icon_layer                              = pn23_x
+1icon_layer_x                            = 48
+1icon_layer_y                            = -23
 
 scope_status            = 1
 scope_zoom_factor       = 20
@@ -696,19 +768,18 @@ scope_dynamic_zoom		= on
 
 [wpn_a545_pn23_hud]:wpn_a545_hud
 item_visual				= anomaly_weapons\wpn_a545\wpn_a545_pn23_hud.ogf
-        aim_hud_offset_pos               = -0.047291, -0.020499, -0.087232
-        aim_hud_offset_pos_16x9          = -0.047291, -0.020499, -0.087232
-        aim_hud_offset_rot               = 0.018698, 0.007112, 0.013
-        aim_hud_offset_rot_16x9          = 0.018698, 0.007112, 0.013
-		
+
+        aim_hud_offset_pos               = -0.078071, 0.008494, -0.155018
+        aim_hud_offset_pos_16x9          = -0.078071, 0.008494, -0.155018
+        aim_hud_offset_rot               = 0.007501, -0.030435, 0.02
+        aim_hud_offset_rot_16x9          = 0.007501, -0.030435, 0.02
 ;-------------------------------------------------------------------------------------
 [wpn_a545_gauss_sight]:wpn_a545
 hud					= wpn_a545_gauss_sight_hud
-visual              = dynamics\weapons\wpn_a545\wpn_a545_pn23.ogf
 
-1icon_layer         = gauss_sight
-1icon_layer_x       = 65
-1icon_layer_y       = -16
+1icon_layer         = gauss_sight_x
+1icon_layer_x       = 53
+1icon_layer_y       = -14
 
 scope_status        = 1
 scope_zoom_factor   = 12
@@ -718,17 +789,16 @@ zoom_step_count		= 4
 
 [wpn_a545_gauss_sight_hud]:wpn_a545_hud
 item_visual				= anomaly_weapons\wpn_a545\wpn_a545_gauss_hud.ogf
-        aim_hud_offset_pos               = -0.047529, -0.009882, -0.111951
-        aim_hud_offset_pos_16x9          = -0.047529, -0.009882, -0.111951
-        aim_hud_offset_rot               = 0.018237, 0.007998, 0.013
-        aim_hud_offset_rot_16x9          = 0.018237, 0.007998, 0.013
-		
+
+        aim_hud_offset_pos               = -0.078252, 0.017996, -0.179021
+        aim_hud_offset_pos_16x9          = -0.078252, 0.017996, -0.179021
+        aim_hud_offset_rot               = 0.008128, -0.029765, 0.02
+        aim_hud_offset_rot_16x9          = 0.008128, -0.029765, 0.02
 ;-------------------------------------------------------------------------------------
 [wpn_a545_1p59]:wpn_a545
 hud					= wpn_a545_1p59_hud
-visual              = dynamics\weapons\wpn_a545\wpn_a545_pn23.ogf
 
-1icon_layer         = 1p59
+1icon_layer         = 1p59_x
 1icon_layer_x       = 75
 1icon_layer_y       = -15
 
@@ -739,7 +809,35 @@ scope_dynamic_zoom               = on
 
 [wpn_a545_1p59_hud]:wpn_a545_hud
 item_visual				= anomaly_weapons\wpn_a545\wpn_a545_1p59_hud.ogf
-        aim_hud_offset_pos               = -0.047666, -0.010841, -0.108125
-        aim_hud_offset_pos_16x9          = -0.047666, -0.010841, -0.108125
-        aim_hud_offset_rot               = 0.01778, 0.008059, 0.013
-        aim_hud_offset_rot_16x9          = 0.01778, 0.008059, 0.013
+
+        aim_hud_offset_pos               = -0.078196, 0.011523, -0.152307
+        aim_hud_offset_pos_16x9          = -0.078196, 0.011523, -0.152307
+        aim_hud_offset_rot               = 0.008054, -0.029894, 0.02
+        aim_hud_offset_rot_16x9          = 0.008054, -0.029894, 0.02
+;-------------------------------------------------------------------------------------
+[wpn_a545_echo1]:wpn_a545
+hud					= wpn_a545_echo1_hud
+
+1icon_layer         = echo1_x
+1icon_layer_x       = 83
+1icon_layer_y       = -20
+
+zoom_step_count					 = 1
+scope_status        			 = 1
+scope_zoom_factor                = 60
+scope_dynamic_zoom               = on
+
+use_alt_aim_hud					= true
+
+[wpn_a545_echo1_hud]:wpn_a545_hud
+item_visual				= anomaly_weapons\wpn_a545\wpn_a545_echo1_hud.ogf
+
+        aim_hud_offset_pos               = -0.078805, 0.020628, -0.06
+        aim_hud_offset_pos_16x9          = -0.078805, 0.020628, -0.06
+        aim_hud_offset_rot               = 0.030514, -0.027551, 0.02
+        aim_hud_offset_rot_16x9          = 0.030514, -0.027551, 0.02	
+		
+        aim_hud_offset_alt_pos           = -0.078971, -0.011578, -0.06
+        aim_hud_offset_alt_pos_16x9      = -0.078971, -0.011578, -0.06
+        aim_hud_offset_alt_rot           = 0.002662, -0.026027, 0.02
+        aim_hud_offset_alt_rot_16x9      = 0.002662, -0.026027, 0.02		
